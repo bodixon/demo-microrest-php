@@ -1,0 +1,18 @@
+{
+    "name": "bodixon/demo-microrest-php",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "silex/silex": "~1.2",
+        "symfony/yaml": "2.8.*",
+        "doctrine/dbal": "dev-master",
+        "marmelab/microrest": "~1.0@dev",
+        "alecsammon/php-raml-parser": "dev-master as 1.0.0.x-dev",
+        "twig/twig": "^2.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\Unit\\": "test/unit"
+        }
+    }
+}

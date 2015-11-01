@@ -1,0 +1,14 @@
+# eclipse service files
+/.buildpath
+/.project
+/.settings
+
+# /
+#.idea
+/.sass-cache
+
+node_modules
+vendor/*
+build
+bin
+!vendor/placeholders

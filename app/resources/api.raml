@@ -1,0 +1,45 @@
+#%RAML 0.8
+title: microrest.php Example API
+baseUri: http://mr.lh/api
+mediaType: application/json
+/users:
+  displayName: Users
+  get:
+    description: Retrieves one or more users.
+    responses:
+      200:
+  post:
+    description: Creates one or more users.
+    body: |
+      {
+        "$schema": "http://json-schema.org/draft-03/schema",
+        "properties": {
+            "name": {
+                "required": true,
+                "type": "string"
+            },
+            "password": {
+                "required": true,
+                "type": "string"
+            }
+        },
+        "required": true,
+        "type": "object"
+      }
+    responses:
+      200:
+  /{id}:
+    get:
+      description: Retrieves one user.
+      responses:
+        200:
+        402:
+            body:
+                application/json:
+                    schema: 
+    put:
+      description: Updates one user.
+      responses:
+        200:
+    delete:
+      description: Delete one user.
