@@ -10,22 +10,6 @@ mediaType: application/json
       200:
   post:
     description: Creates one or more users.
-    body: |
-      {
-        "$schema": "http://json-schema.org/draft-03/schema",
-        "properties": {
-            "name": {
-                "required": true,
-                "type": "string"
-            },
-            "password": {
-                "required": true,
-                "type": "string"
-            }
-        },
-        "required": true,
-        "type": "object"
-      }
     responses:
       200:
   /{id}:
